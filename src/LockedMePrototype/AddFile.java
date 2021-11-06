@@ -14,7 +14,7 @@ public class AddFile  {
         try {
             Path newFilePath = Paths.get(LockedMe.currentDir + "/" + filePath);
             Files.createFile(newFilePath);
-            System.out.println("File is created. Path: " + newFilePath + "");
+            System.out.println("File is created. \nPath: " + newFilePath + "");
         } catch (InvalidPathException e) {
         	System.out.println("File not created. Error:" + e + "");        
 	    } catch (AccessDeniedException e) {
